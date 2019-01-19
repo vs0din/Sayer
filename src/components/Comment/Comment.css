@@ -1,0 +1,19 @@
+.Comments {
+    padding: 0 25px;
+}
+
+.Comments__text {
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: justify;
+    padding: 5px;
+}
+
+.Comments__icon {
+    padding-top:10px;
+    max-width: 64px;
+}
+
+.Comments:last-child .divider {
+    display:none;
+}

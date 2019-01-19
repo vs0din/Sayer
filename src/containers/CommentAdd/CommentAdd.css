@@ -1,0 +1,12 @@
+.CommentAdd {
+    margin: 5px;
+    padding: 5px;
+}
+
+.CommentAdd-add {
+    position: relative;
+    left: 15px;
+    padding: 6px 16px;
+    max-width: 25px;
+    height: auto;
+}

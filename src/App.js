@@ -1,28 +1,23 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Header from './components/Header/header'
+import PostList from "./components/PostList/PostList";
+import CommentsList from './components/CommentsList/CommentsList'
+
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="container">
+                {/*<Header title={<><h1>Sayer</h1> <h3>World's most used time waster</h3></>}/>*/}
+                {/*<PostList/>*/}
+                <Header title={<><h2>First Item with cusomized long title</h2></>} image={process.env.PUBLIC_URL + '/image/arr-left.png'}/>
+                <CommentsList/>
+            </div>
+
+
+        );
+    }
 }
 
 export default App;
