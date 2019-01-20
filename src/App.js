@@ -2,9 +2,12 @@ import React, {Component} from 'react';
 import './App.css';
 import Header from './components/Header/Header'
 import PostsList from "./components/PostsList/PostsList";
-import PlusButton from './components/PlusButton/PlusButton'
+import PlusButton from './containers/PlusButton/PlusButton'
 import CommentsList from './components/CommentsList/CommentsList'
 import CommentAdd from './containers/CommentAdd/CommentAdd'
+
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
 
 
 class App extends Component {
@@ -16,9 +19,9 @@ class App extends Component {
             image={process.env.PUBLIC_URL + '/image/arr-left.png'}
         />
         <PostsList/>
-          <PlusButton
-              image={process.env.PUBLIC_URL + '/image/plus.png'}
-          />
+        <PlusButton
+            image={process.env.PUBLIC_URL + '/image/plus.png'}
+        />
 
         {/*<Header*/}
             {/*title={'First Item with cudsaf dfasd fasdf asdfasdstomized long title'}*/}

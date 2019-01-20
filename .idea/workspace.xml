@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="508ee6a2-3bda-454c-8872-407d5832834c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CommentsList/CommentsList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommentsList/CommentsList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CommentsList/CommentsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CommentsList/CommentsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/CommentAdd/CommentAdd.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/CommentAdd/CommentAdd.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/CommentAdd/CommentAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/CommentAdd/CommentAdd.js" afterDir="false" />
-    </list>
+    <list default="true" id="508ee6a2-3bda-454c-8872-407d5832834c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -23,29 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostList.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/PostList/PostList.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -136,7 +104,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -237,7 +205,7 @@
       <workItem from="1545595048157" duration="486000" />
       <workItem from="1547155379424" duration="1893000" />
       <workItem from="1547925362631" duration="14014000" />
-      <workItem from="1547988687631" duration="3854000" />
+      <workItem from="1547988687631" duration="3986000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1544482728453</created>
@@ -250,12 +218,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61082000" />
+    <option name="totallyTimeSpent" value="61214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="33" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.14672835" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.14672835" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -263,7 +231,7 @@
       <window_info anchor="bottom" id="Run" order="6" weight="0.3265086" />
       <window_info id="npm" order="0" side_tool="true" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32905984" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32905984" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -472,6 +440,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PostList/PostList.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -479,13 +454,6 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PostList/PostList.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
