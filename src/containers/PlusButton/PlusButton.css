@@ -1,23 +1,23 @@
 .PlusButton-img_icon {
-    cursor:pointer;
-    margin: 5px 20px;
-    height: auto;
-    width: 50px;
+  cursor: pointer;
+  margin: 5px 20px;
+  height: auto;
+  width: 50px;
 }
 
 .PlusButton-img_icon:hover {
-    -webkit-transition: all 100ms ease-in;
-    -webkit-transform: scale(1.1);
-    -ms-transition: all 100ms ease-in;
-    -ms-transform: scale(1.1);
-    -moz-transition: all 100ms ease-in;
-    -moz-transform: scale(1.1);
-    transition: all 100ms ease-in;
-    transform: scale(1.1);
+  -webkit-transition: all 100ms ease-in;
+  -webkit-transform: scale(1.1);
+  -ms-transition: all 100ms ease-in;
+  -ms-transform: scale(1.1);
+  -moz-transition: all 100ms ease-in;
+  -moz-transform: scale(1.1);
+  transition: all 100ms ease-in;
+  transform: scale(1.1);
 }
 
 .PlusButton-img__place {
-    display: flex;
-    justify-content: center; /* for horizontal alignment */
-    align-items: center;     /* for vertical alignment   */
+  display: flex;
+  justify-content: center; /* for horizontal alignment */
+  align-items: center; /* for vertical alignment   */
 }

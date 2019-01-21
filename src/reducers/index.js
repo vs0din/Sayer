@@ -1,8 +1,8 @@
-import { combineReducers } from 'redux'
+import {combineReducers} from 'redux'
 import comments from './comments'
 
 const sayer = combineReducers({
-  comments
+	comments
 })
 
 export default sayer

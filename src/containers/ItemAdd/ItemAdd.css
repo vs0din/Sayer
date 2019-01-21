@@ -1,36 +1,35 @@
 .ItemAdd {
-    margin: 10px 0;
-    padding: 5px;
+  margin: 10px 0;
+  padding: 5px;
 }
 
 .BotBorder {
-    box-shadow: 0 2px; /* Параметры линии под текстом */
-    padding-bottom: 5px; /* Расстояние от текста до линии */
-    border: none;
-    background-color: #eee;
+  box-shadow: 0 2px; /* Параметры линии под текстом */
+  padding-bottom: 5px; /* Расстояние от текста до линии */
+  border: none;
+  background-color: #eee;
 }
 
-.ItemAdd .input-group-lg>.form-control {
-    border-radius: 0;
+.ItemAdd .input-group-lg > .form-control {
+  border-radius: 0;
 }
 
 .ItemAdd-add {
-    width:40px;
-    height:40px;
-    border: 0;
-    margin: 0 5px;
-    cursor:pointer;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
-
 .ItemAdd-add:hover {
-    -webkit-transition: all 100ms ease-in;
-    -webkit-transform: scale(1.1);
-    -ms-transition: all 100ms ease-in;
-    -ms-transform: scale(1.1);
-    -moz-transition: all 100ms ease-in;
-    -moz-transform: scale(1.1);
-    transition: all 100ms ease-in;
-    transform: scale(1.1);
+  -webkit-transition: all 100ms ease-in;
+  -webkit-transform: scale(1.1);
+  -ms-transition: all 100ms ease-in;
+  -ms-transform: scale(1.1);
+  -moz-transition: all 100ms ease-in;
+  -moz-transform: scale(1.1);
+  transition: all 100ms ease-in;
+  transform: scale(1.1);
 }
 
