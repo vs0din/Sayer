@@ -1,21 +1,39 @@
 import React, {Component} from 'react';
 import './App.css';
-import MainScreen from './components/MainScreen/MainScreen'
-import CommentsScreen from './components/CommentsScreen/CommentsScreen'
-import ItemAddScreen from './components/ItemAddScreen/ItemAddScreen'
-
-import {createStore} from 'redux'
-import {Provider} from 'react-redux'
+import Header from './components/Header/Header'
+import PostsList from "./components/PostsList/PostsList";
+import PlusButton from './containers/PlusButton/PlusButton'
+import CommentsList from './components/CommentsList/CommentsList'
+import CommentAdd from './containers/CommentAdd/CommentAdd'
+import ItemAdd from './containers/ItemAdd/ItemAdd'
 
 
 class App extends Component {
     render() {
       return <div className="container">
-          <MainScreen/>
+        {/*<Header*/}
+            {/*title={'Sayer'}*/}
+            {/*subTitle={'World\'s most used time waster'}*/}
+            {/*image={process.env.PUBLIC_URL + '/image/arr-left.png'}*/}
+        {/*/>*/}
+        {/*<PostsList/>*/}
+        {/*<PlusButton*/}
+            {/*image={process.env.PUBLIC_URL + '/image/plus.png'}*/}
+        {/*/>*/}
 
-          {/*<CommentsScreen/>*/}
+        <Header
+            title={'First Item with cudsaf dfasd fasdf asdfasdstomized long title'}
+            subTitle={'dsafdsf dsakjflkjsahkjf hakjsdlkdj'}
+            image={process.env.PUBLIC_URL + '/image/arr-left.png'}
+        />
+        <CommentsList/>
+        <CommentAdd/>
 
-          {/*<ItemAddScreen/>*/}
+          {/*<Header*/}
+              {/*title={'Create new item'}*/}
+              {/*image={process.env.PUBLIC_URL + '/image/arr-left.png'}*/}
+          {/*/>*/}
+          {/*<ItemAdd/>*/}
       </div>;
     }
 }
