@@ -1,18 +1,5 @@
-const comment = (state, action) => {
-  switch (action.type) {
-    case 'ADD_COMMENT':
-      return {
-        id: action.id,
-        text: action.text,
-        userPic: "https://cdn.iconscout.com/icon/free/png-256/avatar-375-456327.png"
-      }
-    default:
-      return state
-  }
-}
 
-const initialComments = {
-  comments:
+const initialComments =
       [
         {
           "id": 1,
@@ -33,6 +20,18 @@ const initialComments = {
           "text": "Suspendisse at erat tincidunt nunc euismod lobortis et et urna. Ut nulla tellus, eleifend vitae ultrices nec, fringilla et ex. Integer a odio eu velit dignissim ullamcorper. Praesent nec laoreet turpis, ut efficitur felis. Donec sodales sit amet tellus nec dictum. Donec quis sollicitudin nisi. Vivamus risus ex, rutrum eu venenatis id, egestas eu mi. Aliquam massa ligula, scelerisque vel nisl non, venenatis fringilla dui. Suspendisse vitae tincidunt mi. Morbi congue, tellus in fermentum ornare, elit justo ultrices lorem, eget bibendum nunc enim a lorem. Cras hendrerit non ipsum non fermentum. Nunc bibendum turpis mauris, vitae malesuada lorem posuere in. Mauris congue purus nulla, non pharetra lectus venenatis at. Fusce ultricies lobortis purus eu gravida. Proin pellentesque nec ante eget euismod. Nullam ultrices quis nisi sit amet porttitor."
         }
       ]
+
+const comment = (state, action) => {
+  switch (action.type) {
+    case 'ADD_COMMENT':
+      return {
+        id: action.id,
+        text: action.text,
+        userPic: "https://cdn.iconscout.com/icon/free/png-256/avatar-375-456327.png"
+      }
+    default:
+      return state
+  }
 }
 
 const comments = (state = initialComments, action) => {
