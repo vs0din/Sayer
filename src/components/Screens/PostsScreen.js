@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header/Header'
 import PostsList from "../../components/PostsList/PostsList";
 import PlusButton from '../../containers/PlusButton/PlusButton'
+import {connect} from 'react-redux'
 
 const PostsScreen = (props) => {
 	return (

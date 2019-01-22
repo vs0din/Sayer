@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header/Header'
-import ItemAdd from '../../containers/ItemAdd/ItemAdd'
+import ItemAdd from '../../containers/PostAdd/PostAdd'
 
 const ItemsAddScreen = (props) => {
 	return (

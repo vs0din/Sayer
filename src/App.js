@@ -10,9 +10,9 @@ class App extends Component {
       return <div className="container">
 				<PostsScreen/>
 
-				<CommentsScreen/>
+				{/*<CommentsScreen/>*/}
 
-				<ItemsAddScreen/>
+				{/*<ItemsAddScreen/>*/}
       </div>;
     }
 }

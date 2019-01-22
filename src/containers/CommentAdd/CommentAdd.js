@@ -16,7 +16,7 @@ class CommentAdd extends Component {
               }} type="text" className="form-control" placeholder="New comment goes here..."/>
               <div className="input-group-btn">
                 <img onClick={() => this.props.add(input)} className="CommentAdd-add" alt={""}
-                     src={process.env.PUBLIC_URL + '/image/arr-right.png'}></img>
+                     src={process.env.PUBLIC_URL + '/image/arr-right.png'}/>
                 {/*<img onClick={ () => dispatch(addComment(input.value)) } className="CommentAdd-add" alt={""} src={process.env.PUBLIC_URL + '/image/arr-right.png'}></img>*/}
               </div>
             </div>

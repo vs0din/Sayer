@@ -17,10 +17,11 @@ const composeEnhancers =
         }) : compose;
 
 const persistedState = loadState()
+
 const store = createStore(
     reducer,
     persistedState,
-    composeEnhancers()
+    composeEnhancers(),
 );
 
 store.subscribe(throttle(() => {
