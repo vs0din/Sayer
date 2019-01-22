@@ -4,11 +4,13 @@ import {connect} from 'react-redux'
 import Comment from '../Comment/Comment'
 
 const CommentsList = (props) => {
-
 	return (
 		<div className={'CommentsList row'}>
-			{props.comments.map(comment =>
+			{props.comments.filter((c) => (
+				c.postId === props.settings.currPostId.currPostId
+			)).map(comment =>
 				<Comment
+					postId={comment.postId}
 					key={comment.id}
 					commentIconPath={comment.userPic}
 					commentText={comment.text}
@@ -20,7 +22,8 @@ const CommentsList = (props) => {
 
 function mapStateToProps(state) {
 	return {
-		comments: state.comments
+		comments: state.comments,
+		settings: state.settings
 	}
 }
 

@@ -16,3 +16,5 @@
     background-color: darkgrey;
     outline: 1px solid slategrey;
 }
+
+.hidden { display:none; }

@@ -2,47 +2,52 @@ import React, {Component} from 'react'
 import './PostsList.css';
 import {connect} from 'react-redux'
 import Post from '../Post/Post'
-import {screenVisibility} from "../../actions";
+import {changeCurrPostId, changeCurrPostTitle} from "../../actions";
 
 class PostsList extends Component {
-  render() {
+	componentDidMount() {
+		this.props.changeCurrPostId(this.props.posts[0].id)
+		this.props.changeCurrPostTitle(this.props.posts[0].title)
+	}
 
-    return (
-        <div className="PostList row"
-             onClick={() => this.props.changeScreenVisibility()}
-				>
-          {
-          	this.props.posts.map(post =>
-              <Post
-
-                  key={post.id}
-                  title={post.title}
-                  commentsCount={post.commentsCount}
-              />
-						)
-          }
-        </div>
-    );
-  }
+	render() {
+		return (
+			<div className="PostList row">
+				{
+					this.props.posts.map(post =>
+						<Post
+							key={post.id}
+							postId={post.postId}
+							title={post.title}
+							commentsCount={post.commentsCount}
+						/>
+					)
+				}
+			</div>
+		);
+	}
 };
 
 function mapStateToProps(state) {
 	return {
 		posts: state.posts,
-    visibleScreen: state.visibleScreen
+		visibleScreen: state.visibleScreen,
 	}
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    changeScreenVisibility: () => {
-      dispatch(screenVisibility({
-        PostsScreenIsVisible: false,
-        ItemsAddScreenIsVisible: false,
-        CommentsScreenIsVisible: true
-      }));
-    }
-  }
+const mapDispatchToProps = (dispatch) => {
+	return {
+		changeCurrPostId: (currPostId) => {
+			dispatch(changeCurrPostId({
+				currPostId: currPostId
+			}));
+		},
+		changeCurrPostTitle: (currPostTitle) => {
+			dispatch(changeCurrPostTitle({
+				currPostTitle: currPostTitle
+			}));
+		}
+	}
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(PostsList);

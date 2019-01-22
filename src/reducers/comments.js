@@ -25,6 +25,7 @@ const comment = (state, action) => {
   switch (action.type) {
     case 'ADD_COMMENT':
       return {
+        postId: action.currPostId,
         id: action.id,
         text: action.text,
         userPic: "https://cdn.iconscout.com/icon/free/png-256/avatar-375-456327.png"

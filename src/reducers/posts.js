@@ -3,16 +3,19 @@ const initialPosts =
 	[
 		{
 			"id": 1,
+			"postId": 1,
 			"title": "First item with customize",
 			"commentsCount": 3
 		},
 		{
 			"id": 2,
+			"postId": 2,
 			"title": "Second Item",
 			"commentsCount": 0
 		},
 		{
 			"id": 3,
+			"postId": 3,
 			"title": "Third Item(short one)",
 			"commentsCount": 0
 		}
@@ -24,7 +27,8 @@ const post = (state, action) => {
 			return {
 				id: action.id,
 				title: action.title,
-				commentsCount: 0
+				commentsCount: 0,
+				postId: action.postId
 			}
 		default:
 			return state

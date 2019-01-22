@@ -1,9 +1,10 @@
 import { v4 } from 'node-uuid'
 
-export const addComment = (text) => ({
+export const addComment = (text, currPostId) => ({
 	type: 'ADD_COMMENT',
 	id: v4(),
-	text
+	text,
+	currPostId
 });
 
 export const addPost = (title) => ({
@@ -19,3 +20,14 @@ export const screenVisibility = (choice) => ({
   ItemsAddScreenIsVisible: choice.ItemsAddScreenIsVisible,
   CommentsScreenIsVisible: choice.CommentsScreenIsVisible
 });
+
+export const changeCurrPostId = (choice) => ({
+	type: 'CHANGE_CURR_POST_ID',
+	currPostId: choice,
+});
+
+export const changeCurrPostTitle = (choice) => ({
+	type: 'CHANGE_CURR_POST_TITLE',
+	currPostTitle: choice,
+});
+
