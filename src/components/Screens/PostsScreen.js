@@ -2,7 +2,6 @@ import React from 'react';
 import Header from '../../components/Header/Header'
 import PostsList from "../../components/PostsList/PostsList";
 import PlusButton from '../../containers/PlusButton/PlusButton'
-import {connect} from 'react-redux'
 
 const PostsScreen = (props) => {
 	return (
@@ -12,10 +11,11 @@ const PostsScreen = (props) => {
 				subTitle={'World\'s most used time waster'}
 				image={process.env.PUBLIC_URL + '/image/arr-left.png'}
 			/>
-			<PostsList/>
+
 			<PlusButton
 				image={process.env.PUBLIC_URL + '/image/plus.png'}
 			/>
+      <PostsList/>
 		</>
 	)
 }

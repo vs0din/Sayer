@@ -11,6 +11,7 @@ export const loadState = () => {
 };
 
 export const saveState = (state) => {
+  //delete state.visibleScreen; // should we save screenvisibility?
   try {
     const serializedState = JSON.stringify(state);
     localStorage.setItem('state', serializedState)

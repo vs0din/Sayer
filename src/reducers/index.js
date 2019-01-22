@@ -5,7 +5,7 @@ import posts from './posts'
 
 const sayer = combineReducers({
   comments,
-	visibleScreen,
+  visibleScreen,
   posts
 })
 

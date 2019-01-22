@@ -37,6 +37,7 @@ function mapDispatchToProps(dispatch) {
     add: (el) => {
       dispatch(addComment(el.value));
       el.value = '';
+
     }
   }
 }

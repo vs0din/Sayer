@@ -6,42 +6,6 @@ div.Header {
     height: 120px
 }
 
-/*.Header-top__image {*/
-    /*height: auto;*/
-    /*max-width: 65px;*/
-    /*margin-left: 25px;*/
-    /*margin-top: 7px;*/
-    /*padding: 5px;*/
-
-/*}*/
-
-/*.Header-top__image:hover {*/
-    /*-webkit-transition: all 100ms ease-in;*/
-    /*-webkit-transform: scale(1.1);*/
-    /*-ms-transition: all 100ms ease-in;*/
-    /*-ms-transform: scale(1.1);*/
-    /*-moz-transition: all 100ms ease-in;*/
-    /*-moz-transform: scale(1.1);*/
-    /*transition: all 100ms ease-in;*/
-    /*transform: scale(1.1);*/
-/*}*/
-
-
-/*.Header-top__wrapper {*/
-    /*padding-top:5px;*/
-/*}*/
-
-/*.Header-top__title {*/
-    /*word-break:break-word;*/
-
-/*}*/
-
-/*.Header-top__title h2 {*/
-    /*text-overflow: ellipsis;*/
-    /*white-space: nowrap;*/
-    /*overflow: hidden;*/
-/*}*/
-
 .Header {
     display: -webkit-box;
     display: -webkit-flex;
@@ -88,4 +52,14 @@ div.Header {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+h2.bigger  {
+    font-size: 3.6rem;
+    margin-left: 20px;
+}
+
+span.bigger {
+    font-size: 1.8rem;
+    margin-left: 20px;
 }

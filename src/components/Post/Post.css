@@ -74,42 +74,13 @@
                                   supported by Chrome and Opera */
 }
 
-/*.Post__commentsCount::after, .Post__commentsCount::before {*/
-    /*content: '';*/
-    /*display: block;*/
-    /*position: absolute;*/
-    /*width: 0%;*/
-    /*height: 50%;*/
-    /*background: #000;*/
-    /*z-index: 2;*/
-    /*transition: width 150ms ease*/
-/*}*/
-
-/*.Post__commentsCount::before {*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*transition-delay: 0*/
-/*}*/
-
-/*.Post__commentsCount::after {*/
-    /*bottom: 0;*/
-    /*right: 0;*/
-    /*transition-delay: 150ms*/
-/*}*/
-
-/*.Post__commentsCount:hover {*/
-    /*background-color: #0E1D3C;*/
-    /*font-size: 16px;*/
-    /*padding: 3px 12px;*/
-    /*transition: all .1s ease;*/
-    /*-webkit-transition: all .1s ease;*/
-    /*-moz-transition: all .1s ease;*/
-    /*-o-transition: all .1s ease;*/
-    /*-ms-transition: all .1s ease*/
-/*}*/
-
 hr {
     margin-top: 10px;
     margin-bottom: 20px;
     border-top: 2px solid #eee;
+}
+
+
+.Post .Post__title, .Post .Post__commentsCount {
+    cursor: pointer;
 }

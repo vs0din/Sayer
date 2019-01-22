@@ -11,3 +11,11 @@ export const addPost = (title) => ({
 	id: v4(),
 	title
 });
+
+
+export const screenVisibility = (choice) => ({
+  type: 'CHANGE_SCREEN_VISIBILITY',
+  PostsScreenIsVisible: choice.PostsScreenIsVisible,
+  ItemsAddScreenIsVisible: choice.ItemsAddScreenIsVisible,
+  CommentsScreenIsVisible: choice.CommentsScreenIsVisible
+});

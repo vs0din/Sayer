@@ -4,11 +4,9 @@ import {connect} from 'react-redux'
 import Comment from '../Comment/Comment'
 
 const CommentsList = (props) => {
-	let targetrDiv;
+
 	return (
-		<div ref={node => {
-			targetrDiv = node
-		}} className={'CommentsList row'}>
+		<div className={'CommentsList row'}>
 			{props.comments.map(comment =>
 				<Comment
 					key={comment.id}

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './PostAdd.css';
 import {connect} from 'react-redux'
 import {addPost} from '../../actions'
+import {screenVisibility} from "../../actions";
 
 class PostAdd extends Component {
 	render() {
@@ -33,6 +34,12 @@ function mapDispatchToProps(dispatch) {
 		add: (el) => {
 			dispatch(addPost(el.value));
 			el.value = '';
+      // Aaaa111!!! - have to refactor
+			dispatch(screenVisibility({
+        PostsScreenIsVisible: true,
+        ItemsAddScreenIsVisible: false,
+        CommentsScreenIsVisible: false
+      }));
 		}
 	}
 }

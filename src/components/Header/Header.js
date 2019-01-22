@@ -1,26 +1,55 @@
-import React from 'react'
+import React, {Component} from 'react'
 import './Header.css';
+import {connect} from 'react-redux'
+import {screenVisibility} from "../../actions";
 
-const Header = (props) => {
+class Header extends Component {
+  render() {
+
+
   return (
-
       <div className={'Header'}>
-        <div className={'Header-img__place'}>
+        <div className={'Header-img__place ' +
+          (this.props.visibleScreen.PostsScreenIsVisible ? 'hidden' : '')
+        }>
           <img className={'Header-img_icon'}
-               src={props.image}
-               alt="" width="40" height="40"/>
+
+               src={this.props.image}
+               alt="" width="40" height="40"
+               onClick={() => this.props.changeScreenVisibility()}
+          />
         </div>
 
-        <div className="Header-top__title">
-          <h2> {props.title} </h2>
+        <div className={'Header-top__title'}>
+          <h2 className={this.props.visibleScreen.PostsScreenIsVisible ? 'bigger' : ''}> {this.props.title} </h2>
           <div>
-            <span>{props.subTitle}</span>
+            <span className={this.props.visibleScreen.PostsScreenIsVisible ? 'bigger' : ''}>{this.props.subTitle}</span>
           </div>
         </div>
       </div>
 
   );
+               }
 };
 
-export default Header;
+function mapStateToProps(state) {
+  return {
+    visibleScreen: state.visibleScreen
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    changeScreenVisibility: () => {
+      dispatch(screenVisibility({
+        PostsScreenIsVisible: true,
+        ItemsAddScreenIsVisible: false,
+        CommentsScreenIsVisible: false
+      }));
+    }
+  }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
 
