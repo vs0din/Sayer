@@ -35,3 +35,8 @@ export const deletePost = (id) => ({
   type: 'DELETE_POST',
   id
 });
+
+export const deleteCommentsByPostId = (postId) => ({
+  type: 'DELETE_COMMENTS_BY_POSTID',
+  postId
+});

@@ -9,7 +9,8 @@ class PostAdd extends Component {
     if(event.key === 'Enter'){
       this.props.add(this.newPost);
     }
-  }
+  };
+
   render() {
     let input;
 

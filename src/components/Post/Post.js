@@ -1,7 +1,7 @@
 import React from 'react'
 import './Post.css';
 import {connect} from 'react-redux'
-import {deletePost, changeCurrPostId, changeCurrPostTitle, screenVisibility} from '../../actions';
+import {deleteCommentsByPostId,deletePost, changeCurrPostId, changeCurrPostTitle, screenVisibility} from '../../actions';
 
 const Post = (props) => {
 
@@ -30,7 +30,9 @@ const Post = (props) => {
             >{props.title}
             </div>
 
-            <div ref={node => (elPostDelPlace = node)}
+            <div ref={node => {
+              return (elPostDelPlace = node);
+            }}
                  className='Post-del__place col-xs-2 invisible'
                  onClick={() => props.delPost(props.id)}>
               <span className='Post__title Post-del__btn'>
@@ -76,6 +78,7 @@ const mapDispatchToProps = (dispatch) => {
     },
     delPost: (id) =>{
       dispatch(deletePost(id));
+      dispatch(deleteCommentsByPostId(id));
     }
   }
 }

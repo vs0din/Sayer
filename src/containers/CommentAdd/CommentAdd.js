@@ -4,14 +4,23 @@ import {connect} from 'react-redux'
 import {addComment} from '../../actions'
 
 class CommentAdd extends Component {
+  handleKeyPress = (event) => {
+    if(event.key === 'Enter'){
+      this.props.add(this.newComment, this.props.settings.currPostId);
+    }
+  };
 
   render() {
     return (
         <div className="CommentAdd row">
           <div className="col-xs-12">
             <div className="input-group input-group-lg">
-              <input autoFocus  ref={(el) => { this.newComment = el; }}
-                      type="text" className="form-control" placeholder="New comment goes here..."/>
+              <input autoFocus
+                     ref={(el) => { this.newComment = el; }}
+                     onKeyPress={ this.handleKeyPress }
+                     type="text"
+                     className="form-control"
+                     placeholder="New comment goes here..."/>
               <div className="input-group-btn">
                 <img onClick={() => this.props.add(this.newComment, this.props.settings.currPostId)}
                      className="CommentAdd-add" alt={""}

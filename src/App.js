@@ -9,9 +9,8 @@ class App extends Component {
 
   render() {
 
-		console.log("\n%c To clean the Store please click on user icon ",
-      "background-color: #000; color: #53f802; font-size:24px; font-variant: small-caps")
-    ;
+    console.log("\n%c To clean the Store please click on the User Icon ", "background-color: #000; color: #53f802; font-size:24px; font-variant: small-caps")
+
     return <div className="container">
 
 

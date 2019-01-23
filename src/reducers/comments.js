@@ -42,6 +42,8 @@ const comments = (state = initialComments, action) => {
         ...state,
         comment(undefined, action)
       ]
+    case 'DELETE_COMMENTS_BY_POSTID':
+      return state.filter(c => c.postId !== action.postId);
     default:
       return state
   }
