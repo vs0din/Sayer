@@ -9,10 +9,8 @@ class App extends Component {
 
   render() {
 
-    console.log("\n%cTo clean the Store please use the Console: \n%clocalStorage.removeItem('state')\n",
-        "color: #0f861f; font-size:18px; font-weight: 800; font-variant: small-caps",
-        "background-color: #000; color: #53f802; font-size:24px; font-variant: small-caps",
-      )
+		console.log("\n%c To clean the Store please click on user icon ",
+      "background-color: #000; color: #53f802; font-size:24px; font-variant: small-caps")
     ;
     return <div className="container">
 
