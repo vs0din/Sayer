@@ -1,20 +1,20 @@
-.ItemAdd {
+.PostAdd {
     margin: 10px 0;
     padding: 5px;
 }
 
-.BotBorder {
-    box-shadow: 0 2px; /* Параметры линии под текстом */
-    padding-bottom: 5px; /* Расстояние от текста до линии */
+.PostAdd-input {
+    box-shadow: 0 2px;
+    padding-bottom: 5px;
     border: none;
-    background-color: #eee;
+    background-color: #fff;
 }
 
-.ItemAdd .input-group-lg>.form-control {
+.PostAdd .input-group-lg>.form-control {
     border-radius: 0;
 }
 
-.ItemAdd-add {
+.PostAdd-add {
     width:40px;
     height:40px;
     border: 0;
@@ -22,8 +22,9 @@
     cursor:pointer;
 }
 
-
-.ItemAdd-add:hover {
+.PostAdd-add:hover {
+    -webkit-filter: drop-shadow(2px 2px 10px rgb(185,225,250));
+    filter: drop-shadow(2px 2px 11px rgb(185,225,250));
     -webkit-transition: all 100ms ease-in;
     -webkit-transform: scale(1.1);
     -ms-transition: all 100ms ease-in;

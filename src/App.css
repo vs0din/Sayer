@@ -63,4 +63,18 @@ body .row {
 
 .hidden { display:none; }
 
+.screen {
+    background-color: #fff;
+    max-width: 750px;
+    min-width: 600px;
+    width: 750px;
+    height: 700px;
+}
+
+.list {
+    background-color: #fff;
+    overflow-y: auto;
+    height: 70%;
+}
+
 

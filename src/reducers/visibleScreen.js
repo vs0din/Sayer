@@ -1,6 +1,6 @@
 const initialState = {
 	PostsScreenIsVisible: true,
-	ItemsAddScreenIsVisible: false,
+	PostAddScreenIsVisible: false,
 	CommentsScreenIsVisible: false
 }
 
@@ -10,7 +10,7 @@ const visibleScreen = (state = initialState, action) => {
       return {
       	...state,
 				PostsScreenIsVisible: action.PostsScreenIsVisible,
-				ItemsAddScreenIsVisible: action.ItemsAddScreenIsVisible,
+				PostAddScreenIsVisible: action.PostAddScreenIsVisible,
 				CommentsScreenIsVisible: action.CommentsScreenIsVisible
       }
     default:

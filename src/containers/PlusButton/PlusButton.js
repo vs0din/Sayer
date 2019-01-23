@@ -28,7 +28,7 @@ function mapDispatchToProps(dispatch) {
     changeScreenVisibility: () => {
       dispatch(screenVisibility({
         PostsScreenIsVisible: false,
-        ItemsAddScreenIsVisible: true,
+        PostAddScreenIsVisible: true,
         CommentsScreenIsVisible: false
       }));
     }

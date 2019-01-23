@@ -2,20 +2,17 @@
 const initialPosts =
 	[
 		{
-			"id": 1,
-			"postId": 1,
+			"id": "aaaa",
 			"title": "First item with customize",
 			"commentsCount": 3
 		},
 		{
-			"id": 2,
-			"postId": 2,
+			"id": "bbbb",
 			"title": "Second Item",
 			"commentsCount": 0
 		},
 		{
-			"id": 3,
-			"postId": 3,
+			"id": "cccc",
 			"title": "Third Item(short one)",
 			"commentsCount": 0
 		}
@@ -27,8 +24,7 @@ const post = (state, action) => {
 			return {
 				id: action.id,
 				title: action.title,
-				commentsCount: 0,
-				postId: action.postId
+				commentsCount: 0
 			}
 		default:
 			return state
@@ -42,6 +38,8 @@ const posts = (state = initialPosts, action) => {
 				...state,
 				post(undefined, action)
 			]
+		case 'DELETE_POST':
+			return state.filter(c => c.id !== action.id);
 		default:
 			return state
 	}

@@ -22,12 +22,14 @@ div.Header {
 
 .Header-img_icon {
     cursor:pointer;
-    margin: 5px 20px;
+    margin: 5px 12px;
     height: auto;
     width: 50px;
 }
 
 .Header-img_icon:hover {
+    -webkit-filter: drop-shadow(12px 12px 21px #555);
+    filter: drop-shadow(12px 12px 29px #555);
     -webkit-transition: all 100ms ease-in;
     -webkit-transform: scale(1.1);
     -ms-transition: all 100ms ease-in;
@@ -37,6 +39,7 @@ div.Header {
     transition: all 100ms ease-in;
     transform: scale(1.1);
 }
+
 
 .Header-top__title {
     width: 100%;
@@ -54,12 +57,62 @@ div.Header {
     white-space: nowrap;
 }
 
-h2.bigger  {
-    font-size: 3.6rem;
+.Header .Header-img__place.postList {
+    display:none;
+}
+
+h2.postList {
+    font-size: 4.2rem;
     margin-left: 20px;
 }
 
-span.bigger {
-    font-size: 1.8rem;
+span.postList {
+    font-size: 2.3rem;
     margin-left: 20px;
+    font-weight: 400;
+    opacity: ;
 }
+
+.Header .Header-img__place.commentsList, .Header .Header-img__place.postAdd {
+    display:block;
+}
+
+h2.commentsList, h2.postAdd {
+    font-size: 2.6rem;
+    margin: 0 0 0.125rem;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: normal;
+}
+
+span.commentsList,span.postAdd {
+    display:none;
+}
+
+.Avatar {
+    margin: 4em 1em;
+    position: relative;
+    display: inline-block;
+}
+.Avatar:after {
+    content: '';
+    position: absolute;
+    right: -.3rem;
+    bottom: 0rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 93%;
+    border: 1px solid #fff;
+}
+.Avatar img {
+    border-radius: 60%;
+}
+
+.Avatar--success:after {
+    background: -webkit-linear-gradient(top, #71c100, #518d44);
+}
+
+.Avatar--success:hover:after  {
+    background: -webkit-linear-gradient(top, red, #cc0000);
+}
+

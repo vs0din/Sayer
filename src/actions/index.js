@@ -17,7 +17,7 @@ export const addPost = (title) => ({
 export const screenVisibility = (choice) => ({
   type: 'CHANGE_SCREEN_VISIBILITY',
   PostsScreenIsVisible: choice.PostsScreenIsVisible,
-  ItemsAddScreenIsVisible: choice.ItemsAddScreenIsVisible,
+  PostAddScreenIsVisible: choice.PostAddScreenIsVisible,
   CommentsScreenIsVisible: choice.CommentsScreenIsVisible
 });
 
@@ -27,7 +27,11 @@ export const changeCurrPostId = (choice) => ({
 });
 
 export const changeCurrPostTitle = (choice) => ({
-	type: 'CHANGE_CURR_POST_TITLE',
-	currPostTitle: choice,
+  type: 'CHANGE_CURR_POST_TITLE',
+  currPostTitle: choice,
 });
 
+export const deletePost = (id) => ({
+  type: 'DELETE_POST',
+  id
+});

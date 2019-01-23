@@ -2,25 +2,41 @@ import React, {Component} from 'react';
 import './App.css';
 import PostsScreen from './components/Screens/PostsScreen'
 import CommentsScreen from './components/Screens/CommentsScreen'
-import ItemsAddScreen from './components/Screens/ItemsAddScreen'
+import PostAddScreen from './components/Screens/PostAddScreen'
 import {connect} from 'react-redux'
 
 class App extends Component {
 
   render() {
 
-    console.log("%cTo reload app - use localStorage.removeItem('state')", "color: #0f861f; font-size:18px;font-variant: small-caps");
+    console.log("\n%cTo clean the Store please use the Console: \n%clocalStorage.removeItem('state')\n",
+        "color: #0f861f; font-size:18px; font-weight: 800; font-variant: small-caps",
+        "background-color: #000; color: #53f802; font-size:24px; font-variant: small-caps",
+      )
+    ;
     return <div className="container">
 
-      <div className={!this.props.visibleScreen.PostsScreenIsVisible ? 'hidden' : ''}>
-        <PostsScreen />
-      </div>
-      <div className={!this.props.visibleScreen.ItemsAddScreenIsVisible ? 'hidden' : ''}>
-        <ItemsAddScreen/>
-      </div>
-      <div className={!this.props.visibleScreen.CommentsScreenIsVisible ? 'hidden' : ''}>
-        <CommentsScreen/>
-      </div>
+
+      {this.props.visibleScreen.PostsScreenIsVisible
+          ? <div className={'Screen-Posts'}>
+               <PostsScreen />
+            </div>
+          : null
+      }
+
+      {this.props.visibleScreen.PostAddScreenIsVisible
+          ? <div className={'Screen-AddPost'}>
+              <PostAddScreen />
+            </div>
+          : null
+      }
+
+      {this.props.visibleScreen.CommentsScreenIsVisible
+          ? <div className={'Screen-AddComment'}>
+              <CommentsScreen />
+          </div>
+          : null
+      }
 
     </div>;
   }

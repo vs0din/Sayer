@@ -1,7 +1,17 @@
 .Post {
-    padding: 0 25px;
-    margin: 30px 0;
+    padding-left: 25px;
     font-weight: 700;
+}
+
+.Post .input-group {
+    position: relative;
+    display: inline;
+
+}
+
+.Post .col-xs-1,.Post .col-xs-11 {
+    padding-right: 0;
+    padding-left: 5px;
 }
 
 
@@ -9,50 +19,14 @@
     margin-bottom: 150px
 }
 
-.Post:hover {
-    box-shadow: -3px 0 0 #ff2e59;
-}
-
 .Post__:last-child {
     margin-bottom: 200px
 }
 
-.Post__title {
-    color: #2b2e3e;
-    display: inline-block;
-    font-size: 20px;
-}
-
-.Post__delete {
-    /*float: right;*/
-    background-color: #fff;
-    color: #ff2e59;
-    border: 1px solid #ff2e59;
-    border-radius: 5px;
-    /*padding: 7px 20px;*/
-    /*margin-top: 10px;*/
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle
-}
-
-.Post__delete:hover {
-    font-weight: 600;
-    color: #fff;
-    background-color: #ff2e59;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -ms-transition: all .3s ease
-}
-
 .Post__commentsCount {
+    font-weight: 400;
     position: relative;
-    left: 15px;
+    left: 25px;
     padding: 6px 16px;
     font-size: 24px;
     color: #fff;
@@ -62,6 +36,16 @@
     border-radius: 30px;
     display: inline-block;
     vertical-align: middle;
+}
+
+.Post__commentsCount:hover {
+    -webkit-filter: drop-shadow(2px 2px 10px rgb(185, 225, 250));
+    filter: drop-shadow(2px 2px 11px rgb(185, 225, 250));
+    border-radius: 32px;
+    padding: 8px 18px;
+    left: 23px;
+    transition: all 100ms ease-in;
+    transform: scale(1.1);
 }
 
 .noselect {
@@ -80,7 +64,55 @@ hr {
     border-top: 2px solid #eee;
 }
 
-
 .Post .Post__title, .Post .Post__commentsCount {
     cursor: pointer;
+}
+
+
+.Post__title {
+    display: inline-block;
+    font-size: 20px;
+    white-space: nowrap;
+    line-height: 82px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.Post-del__place {
+    opacity: 0.2;
+    height: 100%;
+    line-height: 26px;
+    text-align: center;
+    color: #000;
+    border: #000 1px double;
+    font-weight: 400;
+}
+
+.Post-del__place:hover{
+    opacity: 1;
+    color: #fff;
+    background-color: #ff2e59;
+    border: #fff 1px double;
+}
+
+.Post .row-mod {
+    height: 82px;
+}
+
+.Post .row-mod:hover {
+    box-shadow: -5px 0 0 #ff2e59;
+}
+
+
+.Post .row-mod [class*="col-"] {
+    vertical-align: middle;
+}
+
+.Post-counter__place {
+    padding-top: 27px;
+}
+
+.invisible {
+    visibility: hidden;
 }

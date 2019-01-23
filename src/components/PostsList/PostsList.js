@@ -12,12 +12,13 @@ class PostsList extends Component {
 
 	render() {
 		return (
-			<div className="PostList row">
+			<div className="list row"
+           ref={(el) => { this.listEl = el; }}>
 				{
 					this.props.posts.map(post =>
 						<Post
 							key={post.id}
-							postId={post.postId}
+							id={post.id}
 							title={post.title}
 							commentsCount={post.commentsCount}
 						/>
@@ -31,7 +32,7 @@ class PostsList extends Component {
 function mapStateToProps(state) {
 	return {
 		posts: state.posts,
-		visibleScreen: state.visibleScreen,
+		visibleScreen: state.visibleScreen
 	}
 }
 

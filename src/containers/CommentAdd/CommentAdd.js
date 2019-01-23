@@ -4,19 +4,18 @@ import {connect} from 'react-redux'
 import {addComment} from '../../actions'
 
 class CommentAdd extends Component {
+
   render() {
-    let input;
     return (
         <div className="CommentAdd row">
           <div className="col-xs-12">
             <div className="input-group input-group-lg">
-              <input ref={node => {
-                input = node
-              }} type="text" className="form-control" placeholder="New comment goes here..."/>
+              <input autoFocus  ref={(el) => { this.newComment = el; }}
+                      type="text" className="form-control" placeholder="New comment goes here..."/>
               <div className="input-group-btn">
-                <img onClick={() => this.props.add(input, this.props.settings.currPostId.currPostId)} className="CommentAdd-add" alt={""}
+                <img onClick={() => this.props.add(this.newComment, this.props.settings.currPostId)}
+                     className="CommentAdd-add" alt={""}
                      src={process.env.PUBLIC_URL + '/image/arr-right.png'}/>
-                {/*<img onClick={ () => dispatch(addComment(input.value)) } className="CommentAdd-add" alt={""} src={process.env.PUBLIC_URL + '/image/arr-right.png'}></img>*/}
               </div>
             </div>
           </div>
@@ -24,6 +23,7 @@ class CommentAdd extends Component {
     )
   }
 }
+
 
 function mapStateToProps(state) {
   return {
@@ -36,8 +36,6 @@ function mapDispatchToProps(dispatch) {
     add: (el, currPostId) => {
       dispatch(addComment(el.value, currPostId));
       el.value = '';
-			let cl = document.querySelector('.CommentsList')
-			cl.scrollTop = cl.scrollHeight;
     }
   }
 }
